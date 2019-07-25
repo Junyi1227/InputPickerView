@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'InputPickerView_Example' do
+  pod 'InputPickerView', :path => '../'
+
+  target 'InputPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
