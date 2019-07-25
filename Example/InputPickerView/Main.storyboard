@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InputPickerView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is just sample you can use to IQKeyboard" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtE-n9-OFC">
+                                <rect key="frame" x="104.5" y="144" width="205.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-dh-Ggy">
+                                <rect key="frame" x="107" y="201" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ykS-Pt-lv4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-u5-Z4e">
+                                <rect key="frame" x="184" y="267" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tj5-T2-S7r">
+                                <rect key="frame" x="107" y="304" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tj5-T2-S7r" firstAttribute="height" secondItem="iXW-dh-Ggy" secondAttribute="height" id="2rs-Mz-cp2"/>
+                            <constraint firstItem="AtE-n9-OFC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fzd-fS-WZl"/>
+                            <constraint firstItem="iXW-dh-Ggy" firstAttribute="top" secondItem="AtE-n9-OFC" secondAttribute="bottom" constant="16" id="Juw-aU-Kme"/>
+                            <constraint firstItem="iXW-dh-Ggy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QlP-1c-eMp"/>
+                            <constraint firstItem="uoy-u5-Z4e" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tev-CJ-eSy"/>
+                            <constraint firstItem="Tj5-T2-S7r" firstAttribute="width" secondItem="iXW-dh-Ggy" secondAttribute="width" id="Uy9-AS-Clz"/>
+                            <constraint firstItem="uoy-u5-Z4e" firstAttribute="top" secondItem="iXW-dh-Ggy" secondAttribute="bottom" constant="36" id="VAw-Jq-hUU"/>
+                            <constraint firstItem="AtE-n9-OFC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="iQu-fz-6tN"/>
+                            <constraint firstItem="Tj5-T2-S7r" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="toY-Ae-1a0"/>
+                            <constraint firstItem="Tj5-T2-S7r" firstAttribute="top" secondItem="uoy-u5-Z4e" secondAttribute="bottom" constant="16" id="tq5-XI-94G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myField" destination="iXW-dh-Ggy" id="YKi-51-uGh"/>
+                        <outlet property="strField" destination="Tj5-T2-S7r" id="0I9-Gv-c55"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

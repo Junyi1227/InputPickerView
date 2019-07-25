@@ -1,0 +1,23 @@
+PODS:
+  - InputPickerView (0.1.0)
+  - IQKeyboardManagerSwift (6.4.0)
+
+DEPENDENCIES:
+  - InputPickerView (from `../`)
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManagerSwift
+
+EXTERNAL SOURCES:
+  InputPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InputPickerView: 87a55f1a54b11fc824bacf68ddd15047f202c11f
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+
+PODFILE CHECKSUM: 785c5aab611ceca28d038829388aaa06d7d4a87e
+
+COCOAPODS: 1.5.3

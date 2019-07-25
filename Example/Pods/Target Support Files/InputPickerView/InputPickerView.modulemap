@@ -1,0 +1,6 @@
+framework module InputPickerView {
+  umbrella header "InputPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

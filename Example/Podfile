@@ -2,7 +2,8 @@ use_frameworks!
 
 target 'InputPickerView_Example' do
   pod 'InputPickerView', :path => '../'
-
+  pod 'IQKeyboardManagerSwift'
+  
   target 'InputPickerView_Tests' do
     inherit! :search_paths
 
