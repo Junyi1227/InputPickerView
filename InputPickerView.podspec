@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint InputPickerView.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'InputPickerView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of InputPickerView.'
+  s.summary          = 'A simple pickerView for inputView,and support [Custom Model] / [String]'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,5 +30,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.swift_version = '5'
+    s.dependency 'AFNetworking', '~> 2.3'
 end
