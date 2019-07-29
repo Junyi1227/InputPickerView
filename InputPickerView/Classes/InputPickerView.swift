@@ -23,9 +23,9 @@ public class InputPickerView<T:InputPickerData>: UIView,UIPickerViewDataSource,U
     var pickerView = UIPickerView()
     public typealias didSelectRow = (_ row:Int,_ str:String, _ model:T) -> ()
     var didSelectAction :didSelectRow?
-    var dataSource:[T] = []
+    public var dataSource:[T] = []
 
-    var row:Int {
+    public var row:Int {
         get {
             return pickerView.selectedRow(inComponent: 0)
         }
@@ -34,7 +34,7 @@ public class InputPickerView<T:InputPickerData>: UIView,UIPickerViewDataSource,U
         }
     }
 
-    var selectStr:String {
+    public var selectStr:String {
         get {
             guard dataSource.count > row else {
                 return ""
@@ -44,7 +44,7 @@ public class InputPickerView<T:InputPickerData>: UIView,UIPickerViewDataSource,U
         }
     }
 
-    var selectModel:T? {
+    public var selectModel:T? {
         get {
             guard dataSource.count > row else {
                 return nil

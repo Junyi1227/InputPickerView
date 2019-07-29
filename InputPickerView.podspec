@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'A simple pickerView for inputView,and support [Custom Model] / [String]'
   s.homepage         = 'https://github.com/Junyi1227/InputPickerView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Junyi1227' => 'allenhung@dmg.tv' }
+  s.author           = { 'Junyi1227' => 'trance1227@gmail.com' }
   s.source           = { :git => 'https://github.com/Junyi1227/InputPickerView.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'InputPickerView/Classes/**/*'

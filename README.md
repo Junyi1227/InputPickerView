@@ -9,7 +9,33 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+In your custom model
+"showedStr" is reture your pickerView's showed string.
+
+```swift
+import InputPickerView
+
+class CategoryModel: Codable,InputPickerData {
+    func showedStr() -> String {
+        return category
+    }
+
+    var category:String
+    var categoryKey:String
+}
+
+```
+
+use InputPickerView
+```
+lazy var pickerView = InputPickerView<CategoryModel>()
+
+pickerView.setupData(dataSource) { (row, selectStr, selectModel) in
+
+}
+myField.inputView = pickerView
+
+```
 
 ## Installation
 
@@ -22,7 +48,7 @@ pod 'InputPickerView'
 
 ## Author
 
-Junyi1227, allenhung@dmg.tv
+Junyi1227, trance1227@gmail.com
 
 ## License
 
