@@ -27,7 +27,7 @@ class CategoryModel: Codable,InputPickerData {
 ```
 
 use InputPickerView
-```
+```swift
 lazy var pickerView = InputPickerView<CategoryModel>()
 
 pickerView.setupData(dataSource) { (row, selectStr, selectModel) in

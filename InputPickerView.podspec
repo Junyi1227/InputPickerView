@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'InputPickerView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A simple pickerView for inputView,and support [Custom Model] / [String]'
   s.homepage         = 'https://github.com/Junyi1227/InputPickerView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
